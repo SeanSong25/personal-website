@@ -1,0 +1,140 @@
+
+.cycle-slideshow{
+    margin-top:50px;
+}
+.cycle-prev{
+    position:absolute;
+    top: 35%;
+    background-color: rgba(0,0,0,0.4);
+    color:#FFF;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    z-index:1000;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+
+.cycle-next{
+    position:absolute;
+    right:0;
+    top: 35%;
+    background-color: rgba(0,0,0,0.4);
+    color:#FFF;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    z-index:1000;
+    opacity:0;
+    transition:opacity 0.5s;
+}
+
+.cycle-slideshow:hover .cycle-next,
+.cycle-slideshow:hover .cycle-prev{
+    opacity : 1;
+}
+.content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.content .intro{ 
+    font:'BebasNeue-Regular';
+    width: 66%;
+    float: left;
+    font-size: 185%;
+}
+
+header{
+    background: #4aa8d3;
+    font-weight: 200;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.homepageNav a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    width:0%;
+    background-color:#000;
+    position: absolute;
+    top:0;
+    transition: all ease-in-out 250ms;
+}
+
+.homepageNav{
+    float: right;
+}
+
+.homepageNav ul{
+    list-style-type: none;
+
+}
+
+.homepageNav li{
+    display: inline-block;
+    margin-right:40px;
+    padding-top: 15px;
+    padding-bottom:5px;
+    position: relative;
+}
+
+.homepageNav a{
+    color:#444;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+.homepageNav a:hover{
+    color: #000;
+    font-size: 20px;
+}
+
+.homepageNav a:hover::before{
+    width:100%;
+}
+
+html body{
+    margin:0;
+}
+
+
+.imageText{
+    position: absolute;
+    width:100%;
+    bottom:0;
+    background-color: rgba(0,0,0,0.6);
+    color:#FFF;
+    padding:5px;
+    box-sizing: border-box;
+}
+.imageText p{
+    margin-top:0;
+}
+.intro{
+    font-size: 200%;
+}
+
+.logo img{
+    padding-top: 5px;
+    float:left;
+    width: 130px;
+    height: 65px; 
+}
+.slide img{
+    display: block;
+    size:100%;
+    width:100%;
+    height: auto;
+}
+
+
+
+
+
+
