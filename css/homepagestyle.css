@@ -1,0 +1,214 @@
+
+@font-face{
+    font-family: NameFont;
+    src: url(../fonts/Fuggles/Fuggles-Regular.ttf);
+}
+
+body{
+    background-image: url(../images/marble.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.contact-info{
+    margin-top:75px;
+    margin-bottom:60px;
+    width:20%;
+    margin-left:40%;
+    margin-right:40%;
+    color:#f0aa29;
+    text-align: center;
+}
+
+.cycle-slideshow{
+    border-radius: 40px;
+    
+    margin-top:10%;
+    width:35%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.cycle-prev{
+    position:absolute;
+    top: 35%;
+    background-color: rgba(0,0,0,0.4);
+    color:#FFF;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    z-index:1000;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+
+.cycle-next{
+    position:absolute;
+    right:0;
+    top: 35%;
+    background-color: rgba(0,0,0,0.4);
+    color:#FFF;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    z-index:1000;
+    opacity:0;
+    transition:opacity 0.5s;
+}
+
+.cycle-slideshow:hover .cycle-next,
+.cycle-slideshow:hover .cycle-prev{
+    opacity : 1;
+}
+.content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.content .intro{ 
+    font:'BebasNeue-Regular';
+    width: 66%;
+    float: left;
+    font-size: 185%;
+}
+
+.divideLine{
+    width:50%;
+}
+
+header{
+    font-weight: 200;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.homepageNav a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    width:0%;
+    background-color:#f0aa29;
+    position: absolute;
+    top:0;
+    transition: all ease-in-out 250ms;
+}
+
+.Name{
+    float:none;
+    text-align:center;
+    width:20%;
+    font-size:100px;
+    margin-top:75px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#f0aa29;
+    font-weight:bold;
+    font-family: 'NameFont';
+}
+
+.homepageNav{
+    float: center;
+    margin-left:30%;
+    margin-top:0px;
+    width:50%;
+    
+    
+}
+
+.homepageNav ul{
+    list-style-type: none;
+    
+}
+
+.homepageNav li{
+    display: inline-block;
+    margin-right:40px;
+    padding-top: 15px;
+    padding-bottom:5px;
+    position: relative;
+}
+
+.homepageNav a{
+    color:#f0aa29;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family: 'NameFont';
+    font-weight:bold;
+    font-size:25px;
+}
+
+.homepageNav a:hover{
+    font-size: 35px;
+}
+
+.homepageNav a:hover::before{
+    width:100%;
+}
+
+html body{
+    margin:0;
+}
+
+
+.imageText{
+    position: absolute;
+    width:100%;
+    bottom:0;
+    background-color: rgba(0,0,0,0.6);
+    color:#FFF;
+    padding:5px;
+    box-sizing: border-box;
+}
+.imageText p{
+    margin-top:0;
+}
+.contact-header{
+    font-size: 200%;
+    width: 20%;
+    MARGIN-TOP:40px;
+    margin-left:45%;
+    margin-right:45%;
+    color:#f0aa29;
+}
+
+.logo img{
+    padding-top: 5px;
+    float:left;
+    width: 130px;
+    height: 65px; 
+}
+
+.slide{
+    width:40%;
+    position:relative;
+    margin:auto;
+}
+
+.slide img{
+    display: block;
+    width:100%;
+    position:relative;
+    height: auto;
+    margin:auto;
+    border-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.slide .imageText{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:80%;
+    padding:1rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+
+
+
