@@ -110,11 +110,9 @@ header::after{
 }
 
 .homepageNav{
-    float: center;
-    margin-left:30%;
-    margin-top:0px;
-    width:50%;
-    
+    text-align: center;
+    margin:auto;
+    width:100%;
     
 }
 

@@ -113,7 +113,24 @@ i{
     background-image: url(../images/card.jpg);
 }
 
-@media screen and (max-width:690px){
+@media screen and (max-width:720px){
+.content-section{
+    display:grid;
+    width:90vh;
+    margin:auto;
+    height:300vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: "intro"
+                         "skills"
+                         "grider"
+                         "grider"
+                         "tip-calculator"
+                         "ipAddress"
+                         "ipAddress"
+                         "card";
+
+}
 
 }
 
@@ -171,7 +188,7 @@ header::after{
 
 .homepageNav{
     margin-top:0px;
-    width:50%;
+    width:100%;
     text-align:center;
     margin:auto;
 }
