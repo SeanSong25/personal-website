@@ -38,6 +38,7 @@ body{
     background-image: url(../images/marble.jpg);
     background-size:cover;
     background-attachment: fixed;
+    font-family: "NameFont";
 }
 
 .Bio{
